@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+
+  <!-- Circle ring -->
+  <circle cx="100" cy="100" r="72" fill="none" stroke="#D4A847" stroke-width="4"/>
+
+  <!-- FORK (left side) -->
+  <!-- Tines -->
+  <line x1="82" y1="48" x2="82" y2="72" stroke="#D4A847" stroke-width="3" stroke-linecap="round"/>
+  <line x1="88" y1="48" x2="88" y2="72" stroke="#D4A847" stroke-width="3" stroke-linecap="round"/>
+  <line x1="94" y1="48" x2="94" y2="72" stroke="#D4A847" stroke-width="3" stroke-linecap="round"/>
+  <!-- Fork neck curve -->
+  <path d="M82 72 Q82 84 88 88 Q94 84 94 72" fill="none" stroke="#D4A847" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Fork handle -->
+  <line x1="88" y1="88" x2="88" y2="152" stroke="#D4A847" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- KNIFE (right side) -->
+  <!-- Blade -->
+  <path d="M112 48 C124 48 128 58 128 72 L112 80 Z" fill="#D4A847"/>
+  <!-- Handle -->
+  <line x1="112" y1="80" x2="112" y2="152" stroke="#D4A847" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- UR-Kitchen wordmark below -->
+  <!-- <text x="100" y="185" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#1C1208" letter-spacing="2">UR-KITCHEN</text> -->
+
+</svg>

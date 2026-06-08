@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UR-Kitchen</title>
+    <meta
+      name="description"
+      content="Stop Wasting Food. Start Cooking. A healthy life style begins in the kitchen"
+    />
+    <meta name="author" content="Ohotuowo Morgan Agrinya" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/ur-kitchen-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div id="header-container"></div>
+
+    <main id="app">
+      <section
+        class="relative min-h-[75vh] flex items-center bg-olio-gold overflow-hidden"
+      >
+        <div
+          class="absolute inset-y-0 right-0 w-full md:w-1/2 z-0 opacity-30 md:opacity-100 animate-zoom-out [animation-delay:200ms]"
+        >
+          <img
+            src="/assets/hero.png"
+            alt="Bowl of noodles"
+            class="w-full h-full object-fit object-right [-webkit-mask-image:linear-gradient(to_right,transparent,black_15%)] mask-[linear-gradient(to_right,transparent,black_0%)];"
+          />
+        </div>
+
+        <div
+          class="relative z-10 max-w-6xl mx-auto px-6 py-20 w-full grid grid-cols-1 md:grid-cols-2 gap-12 animate-fade-in-up [animation-delay:200ms]"
+        >
+          <div class="flex flex-col justify-center items-start text-left">
+            <h1
+              class="text-4xl md:text-6xl font-heading font-bold text-truffle leading-tight mb-6"
+            >
+              Stop Wasting Food.<br />
+              <span class="text-white">Start Cooking.</span>
+            </h1>
+
+            <p
+              class="text-base md:text-xl text-truffle mb-10 max-w-xl font-medium"
+            >
+              Turn the random ingredients in your kitchen into delicious,
+              healthy, budget-friendly meals.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <a
+                href="/match-ingredients/"
+                class="bg-olio-gold text-cream font-bold py-3 px-6 rounded-lg shadow-md hover:bg-cream hover:text-olio-gold hover:border-cream hover:shadow-xl transition-all duration-1000 w-full sm:w-auto text-center border-2 border-olio-gold"
+              >
+                Match My Ingredients
+              </a>
+              <a
+                href="/browse-recipes/"
+                class="bg-transparent border border-truffle text-truffle font-bold py-3 px-6 rounded-lg hover:bg-truffle hover:text-cream transition-colors duration-700 w-full sm:w-auto text-center"
+              >
+                Browse All Recipes
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden md:block"></div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-pasta py-20 border-t border-truffle/10">
+        <div class="max-w-6xl mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-heading font-bold text-center mb-16"
+          >
+            Built for Students. Designed for Health.
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-cream p-8 rounded-xl shadow-sm text-center border border-truffle/5 hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 bg-olio-gold/20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
+              >
+                <img
+                  src="./assets/money.svg"
+                  alt="money"
+                  width="40"
+                  height="auto"
+                />
+              </div>
+              <h3 class="text-xl font-heading font-bold mb-3">Save Money</h3>
+              <p class="text-truffle/80 font-body">
+                Stop buying takeout. Utilize the ingredients you already have
+                sitting in your fridge and pantry.
+              </p>
+            </div>
+
+            <div
+              class="bg-cream p-8 rounded-xl shadow-sm text-center border border-truffle/5 hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 bg-olio-gold/20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
+              >
+                <img
+                  src="./assets/food.svg"
+                  alt="A bowl of food"
+                  width="40"
+                  height="auto"
+                />
+              </div>
+              <h3 class="text-xl font-heading font-bold mb-3">Eat Healthier</h3>
+              <p class="text-truffle/80 font-body">
+                Get instant macro-nutritional data for every meal so you can
+                easily hit your health and fitness goals.
+              </p>
+            </div>
+
+            <div
+              class="bg-cream p-8 rounded-xl shadow-sm text-center border border-truffle/5 hover:shadow-md transition-shadow"
+            >
+              <div
+                class="w-16 h-16 bg-olio-gold/20 rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
+              >
+                <img
+                  src="./assets/recycle.svg"
+                  alt="recycle image"
+                  width="40"
+                  height="auto"
+                />
+              </div>
+              <h3 class="text-xl font-heading font-bold mb-3">Zero Waste</h3>
+              <p class="text-truffle/80 font-body">
+                Find creative and delicious ways to use up your leftovers before
+                they go bad and end up in the trash.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

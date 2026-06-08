@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme {
+  --color-olio-gold: #d4a847;
+  --color-white: #ffffff;
+  --color-cream: #fff8ec;
+  --color-pasta: #ede0c8;
+  --color-truffle: #1c1208;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-truffle font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  .logo {
+    @apply font-heading font-bold;
+  }
+}
+
+@layer components {
+  .hamburger-line::before,
+  .hamburger-line::after {
+    content: "";
+    @apply absolute w-8 h-0.5 bg-truffle rounded transition-all duration-300 left-0;
+  }
+
+  .hamburger-line::before {
+    @apply -top-2.5;
+  }
+  .hamburger-line::after {
+    @apply top-2.5;
+  }
+
+  .is-open .hamburger-line {
+    @apply bg-transparent;
+  }
+
+  .is-open .hamburger-line::before {
+    @apply top-0 rotate-45;
+  }
+
+  .is-open .hamburger-line::after {
+    @apply top-0 -rotate-45;
+  }
+}
+
+@theme {
+  --animate-zoom-out: zoom-out 1.2s ease-out forwards;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
