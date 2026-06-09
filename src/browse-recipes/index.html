@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UR-Kitchen | Browse Recipes</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/ur-kitchen-logo.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="bg-white">
+    <div id="header-container"></div>
+
+    <main class="min-h-screen">
+      <section class="bg-pasta py-16 px-6 border-b border-truffle/10">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1
+            class="text-3xl md:text-5xl font-heading font-bold text-truffle mb-4"
+          >
+            Craving something specific?
+          </h1>
+          <p class="text-base md:text-lg text-truffle mb-8 font-medium">
+            Search by name, and find out your meals full nutritional benefit.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <input
+              type="text"
+              id="browse-input"
+              placeholder="e.g. Teriyaki Chicken..."
+              class="w-full sm:w-2/3 px-6 py-4 rounded-lg border-2 border-truffle/20 focus:outline-none focus:border-olio-gold focus:ring-1 focus:ring-olio-gold text-lg shadow-sm"
+            />
+            <button
+              id="search-btn"
+              class="w-full sm:w-auto bg-truffle text-cream font-bold py-4 px-8 rounded-lg shadow-md hover:bg-olio-gold hover:text-truffle transition-colors duration-300 text-lg"
+            >
+              Browse
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-6xl mx-auto px-6 py-16">
+        <div
+          id="search-status"
+          class="text-center text-truffle/70 font-medium mb-8"
+        ></div>
+        <div
+          id="recipe-grid"
+          class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8"
+        ></div>
+      </section>
+    </main>
+
+    <div
+      id="recipe-modal"
+      class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-truffle/80 backdrop-blur-sm p-4 opacity-0 transition-opacity duration-300"
+    >
+      <div
+        class="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] overflow-y-auto relative transform scale-95 transition-transform duration-300"
+        id="modal-content-container"
+      >
+        <button
+          id="close-modal-btn"
+          class="absolute top-4 right-4 bg-white/80 hover:bg-truffle hover:text-white text-truffle rounded-full p-2 transition-colors z-20 shadow-sm"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <div id="modal-body" class="p-0"></div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/browse.js"></script>
+  </body>
+</html>
